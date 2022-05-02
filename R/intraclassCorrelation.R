@@ -15,7 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-IntraclassCorrelation <- function(jaspResults, dataset, options) {
+intraclassCorrelation <- function(jaspResults, dataset, options) {
 
   dataset <- .intraclassCorrelationReadData(dataset, options)
 
@@ -109,7 +109,7 @@ IntraclassCorrelation <- function(jaspResults, dataset, options) {
     jaspTable$setData(icc)
     jaspTable$addFootnote(
       gettextf(
-        "%s subjects and %s judges/measurements. ICC type as referenced by Shrout & Fleiss (1979).",
+        "%s subjects and %s raters/measurements. ICC type as referenced by Shrout & Fleiss (1979).",
         full_results$n.obs,
         full_results$n.judge
       )
