@@ -19,7 +19,8 @@ Imports:
   LaplacesDemon,
   MASS,
   psych,
-  lme4
+  lme4,
+  EGAnet
 Remotes:
   juliuspf/Bayesrel,
   jasp-stats/jaspBase,
